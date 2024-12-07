@@ -1,0 +1,158 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/./master/nextflow_schema.json",
+    "title": "cosbi/wf-mrsa",
+    "workflow_title": "PathoFinder",
+    "description": "An App used to annotate genome assembly and predict AMR genes and Virulence factors on it.",
+    "demo_url": "https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-template/wf-template-demo.tar.gz",
+    "aws_demo_url": "https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-template/wf-template-demo/aws.nextflow.config",
+    "url": "https://github.com/godkin1211/wf-mrsa",
+    "type": "object",
+    "definitions": {
+        "input": {
+            "title": "Input Options",
+            "type": "object",
+            "fa_icon": "fas fa-arrow-right",
+            "description": "Parameters for finding and handling input data for analysis.",
+            "properties": {
+                "path2projfolder": {
+                    "type": "string",
+                    "format": "directory-path",
+                    "title": "Path to Project Folder",
+                    "description": "Path to the project folder containing the original assembly fasta files.",
+                    "help_text": "This accepts one of three cases: (i) the path to a single FASTA file; (ii) the path to a top-level directory containing FASTA files; (iii) the path to a directory containing one level of sub-directories which in turn contain FASTA files. In the first and second case, a sample name can be supplied with `--sample`. In the last case, the data is assumed to be multiplexed with the names of the sub-directories as barcodes. In this case, a sample sheet can be provided with `--sample_sheet`."
+                }
+            },
+            "allOf": [
+                {
+                    "required": [
+                        "path2projfolder"
+                    ]
+                }
+            ]
+        },
+        "samples": {
+            "title": "Sample Options",
+            "type": "object",
+            "fa_icon": "fas fa-vials",
+            "description": "Parameters that relate to samples such as sample sheets and sample names.",
+            "properties": {
+                "samplesheet": {
+                    "type": "string",
+                    "format": "file-path",
+                    "description": "An Excel file used to map barcodes to sample aliases.",
+                    "help_text": "The sample sheet is an Excel (.xlsx) file with columns named `Experiment ID`, `Barcode`, `MIRL no.` and `Serial no.`."
+                },
+                "species": {
+                    "type": "string",
+                    "description": "Species name for the input data. Permissible if passing a single .fasta file or directory of .fasta files."
+                }
+            }
+        },
+        "output": {
+            "title": "Output Options",
+            "type": "object",
+            "fa_icon": "fas fa-arrow-left",
+            "description": "Parameters for saving and naming workflow outputs.",
+            "properties": {
+                "out_dir": {
+                    "type": "string",
+                    "default": "output",
+                    "format": "directory-path",
+                    "description": "Directory for output of all workflow results."
+                }
+            }
+        },
+        "advanced_options": {
+            "title": "Advanced Options",
+            "type": "object",
+            "fa_icon": "far fa-question-circle",
+            "description": "Advanced options for configuring processes inside the workflow.",
+            "help_text": "These advanced options do not need to be changed for typical use, but allow fine tuning of workflows for users who want more control over the workflow.",
+            "properties": {
+                "runPGAP": {
+                    "type": "boolean",
+                    "description": "Run PGAP to predict genes and annotate those genes.",
+                    "help_text": "Run PGAP to predict genes and annotate those genes, so RGI can directly use protein sequences instead of contig sequences.",
+                    "default": false
+                }
+            }
+        },
+        "misc": {
+            "title": "Miscellaneous Options",
+            "type": "object",
+            "description": "Everything else.",
+            "default": "",
+            "properties": {
+                "disable_ping": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Enable to prevent sending a workflow ping."
+                },
+                "help": {
+                    "type": "boolean",
+                    "description": "Display help text.",
+                    "fa_icon": "fas fa-question-circle",
+                    "default": false,
+                    "hidden": true
+                },
+                "version": {
+                    "type": "boolean",
+                    "description": "Display version and exit.",
+                    "fa_icon": "fas fa-question-circle",
+                    "default": false,
+                    "hidden": true
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/input"
+        },
+        {
+            "$ref": "#/definitions/samples"
+        },
+        {
+            "$ref": "#/definitions/output"
+        },
+        {
+            "$ref": "#/definitions/advanced_options"
+        },
+        {
+            "$ref": "#/definitions/misc"
+        }
+    ],
+    "properties": {
+        "aws_image_prefix": {
+            "type": "string",
+            "hidden": true
+        },
+        "aws_queue": {
+            "type": "string",
+            "hidden": true
+        },
+        "monochrome_logs": {
+            "type": "boolean"
+        },
+        "validate_params": {
+            "type": "boolean",
+            "default": true
+        },
+        "show_hidden_params": {
+            "type": "boolean"
+        }
+    },
+    "resources": {
+        "recommended": {
+            "cpus": 2,
+            "memory": "2GB"
+        },
+        "minimum": {
+            "cpus": 2,
+            "memory": "2GB"
+        },
+        "run_time": "5 minutes per sample",
+        "arm_support": true 
+    }
+}
