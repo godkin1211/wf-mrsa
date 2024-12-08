@@ -3,7 +3,7 @@ process renameFastaFiles {
     //debug true
 
     input:
-    path samplesheet
+    val samplesheet
     path path2AssembliesDir
     
     output:
