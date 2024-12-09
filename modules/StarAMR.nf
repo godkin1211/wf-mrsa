@@ -1,6 +1,6 @@
 process runStarAMR {
     publishDir "${params.out_dir}/staramr", mode: 'copy'
-    container 'staphb/staramr:latest'
+    //container 'staphb/staramr:latest'
     maxForks 1
 
     input:
@@ -12,9 +12,9 @@ process runStarAMR {
 
     script:
     """
+    source /home/godkin/miniconda3/bin/activate staramr
     species=\$(echo $species | tr '[:upper:]' '[:lower:]' | sed 's/ /_/')
     mv input.fasta ${sample}.fasta
-    sed -i '116s#_\")#-\")#' /usr/local/lib/python3.9/site-packages/staramr/blast/results/pointfinder/nucleotide/PointfinderHitHSPPromoter.py
     staramr search --pointfinder-organism \$species \
                    --output-summary ${sample}_summary.tsv \
                    --output-detailed-summary ${sample}_detailed_summary.tsv \
@@ -26,5 +26,9 @@ process runStarAMR {
                    --output-hits-dir ${sample}_hits \
                    --output-mlst ${sample}_mlst.tsv \
                    ${sample}.fasta
+    conda deactivate
     """
 }
+
+
+//#sed -i '116s#_\")#-\")#' /usr/local/lib/python3.9/site-packages/staramr/blast/results/pointfinder/nucleotide/PointfinderHitHSPPromoter.py

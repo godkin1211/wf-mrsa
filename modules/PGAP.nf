@@ -10,6 +10,8 @@ process runPGAP {
     output:
     path "${sample}_pgap_output", emit: pgap_output_dir
     tuple val(sample), path("${sample}_pgap_output/${sample}.faa"), emit: sampleid_and_aa_seqs
+    path "${sample}_pgap_output/${sample}_with_genomic_fasta.gff", emit: pgap_gff
+    path "${sample}_pgap_output/${sample}.gbk", emit: pgap_gbk
 
     script:
     """

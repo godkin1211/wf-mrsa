@@ -16,8 +16,6 @@ include { mergrResultsWithTemplate } from './modules/MergeResults.nf'
 workflow {
     // Creating channel from arguments
     species = Channel.value(params.species)
-    path2projfolder = Channel.fromPath(params.path2projfolder)
-    samplesheetfile = Channel.value(params.samplesheet)
     virulencefinderdb = Channel.value(params.virulencefinderdb)
     spa_type_file = Channel.value(params.spa_type_file)
     spa_repeat_file = Channel.value(params.spa_repeat_file)
@@ -29,10 +27,18 @@ workflow {
     final_result_template_file = Channel.value(params.template_file)
 
     // Beginning of this pipeline
-    fastafilelist = renameFastaFiles(samplesheetfile, path2projfolder).flatten()
+    samplesheetfile = Channel.value(params.samplesheet)
+    if (params.path2projfolder) {
+        path2projfolder = Channel.fromPath(params.path2projfolder)
+        fastafilelist = renameFastaFiles(samplesheetfile, path2projfolder).flatten()
+    }
+    if (params.path2fastafolder) {
+        fastafilelist = Channel.fromPath(["${params.path2fastafolder}/*.fa", "${params.path2fastafolder}/*.fasta", "${params.path2fastafolder}/*.fna"])
+    }
+    
     sampleidANDfasta = fastafilelist.map { it -> [it.getSimpleName(), it] }
     if (params.runPGAP == true) {
-        (pgap_out_dir, pgap_annot_sampleid_and_aa_seq) = runPGAP(sampleidANDfasta, species)
+        (pgap_out_dir, pgap_annot_sampleid_and_aa_seq, pgap_gff, pgap_gbk) = runPGAP(sampleidANDfasta, species)
         card_result = runRGI(pgap_annot_sampleid_and_aa_seq, card_db_dir)
     } else {
         card_result = runRGI(sampleidANDfasta, card_db_dir)
@@ -51,7 +57,5 @@ workflow {
     excelfiles = outputfiles.flatMap { it->it }.map{ it -> it[1] }
     summary_file = parseGatheredResults(excelfiles, druglist_file, spaccdb_file, samplesheetfile).collectFile(name: "${params.out_dir}/summaries.csv")
     mergrResultsWithTemplate(summary_file, final_result_template_file)
-
     // SheetName: ResFinder, PlasmidFinder, MLST_Summary, Staramr_Summary, Staramr_Detail, VirulenceFinder, Sccmec, SpaTyper, CARD
-    //convertExcelToHTML(gathered_results)
 }
