@@ -1,0 +1,13 @@
+Isolate ID	Data	Data Type	Predicted Phenotype	CGE Predicted Phenotype	%Identity	%Overlap	HSP Length/Total Length	Contig	Start	End	Accession
+MR03	ST59 (saureus)	MLST									
+MR03	rep16	Plasmid			100.0	100.0	744/744	contig_4_polish	4481	3738	CP000737
+MR03	rep19	Plasmid			99.9	100.0	984/984	contig_4_polish	4907	5890	CP000704
+MR03	rep21	Plasmid			98.56	97.49	971/996	contig_1_polish	971	1	EU168704
+MR03	rep21	Plasmid			98.49	100.0	996/996	contig_1_polish	3965	2970	EU168704
+MR03	rep5a	Plasmid			100.0	100.0	861/861	contig_4_polish	1590	2450	AP003139
+MR03	aac(6')-aph(2'')	Resistance	unknown[aac(6')-aph(2'')_1_M13771]	Gentamicin, Tobramycin, Netilmicin, Kanamycin, Amikacin, Dibekacin, Isepamicin, Fortimicin, Streptomycin	100.0	100.0	1440/1440	contig_4_polish	14930	16369	M13771
+MR03	aac(6')-aph(2'')	Resistance	amikacin, gentamicin, tobramycin	Gentamicin, Tobramycin, Netilmicin, Kanamycin, Amikacin, Dibekacin, Isepamicin, Fortimicin, Streptomycin	100.0	100.0	1440/1440	contig_4_polish	14930	16369	M13771
+MR03	blaZ	Resistance	unknown[blaZ_5_AJ302698]	Amoxicillin, Ampicillin, Penicillin, Piperacillin	100.0	100.0	846/846	contig_4_polish	18135	17290	AJ302698
+MR03	blaZ	Resistance	ampicillin	Amoxicillin, Ampicillin, Penicillin, Piperacillin	100.0	100.0	846/846	contig_4_polish	18135	17290	AJ302698
+MR03	mecA	Resistance	unknown[mecA_8_NC_007168]	Amoxicillin, Amoxicillin+Clavulanic acid, Ampicillin, Ampicillin+Clavulanic acid, Cefepime, Cefixime, Cefotaxime, Cefoxitin, Ceftazidime, Ertapenem, Imipenem, Meropenem, Piperacillin, Piperacillin+Tazobactam	100.0	100.0	2007/2007	contig_2_polish	2201145	2203151	NC_007168
+MR03	mecA	Resistance	penicillin	Amoxicillin, Amoxicillin+Clavulanic acid, Ampicillin, Ampicillin+Clavulanic acid, Cefepime, Cefixime, Cefotaxime, Cefoxitin, Ceftazidime, Ertapenem, Imipenem, Meropenem, Piperacillin, Piperacillin+Tazobactam	100.0	100.0	2007/2007	contig_2_polish	2201145	2203151	NC_007168

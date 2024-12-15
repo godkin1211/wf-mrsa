@@ -1,0 +1,15 @@
+Isolate ID	Data	Data Type	Predicted Phenotype	CGE Predicted Phenotype	%Identity	%Overlap	HSP Length/Total Length	Contig	Start	End	Accession
+2C010	ST1232 (saureus)	MLST									
+2C010	rep16	Plasmid			100.0	100.0	744/744	contig_2_polish	11633	10890	CP002115
+2C010	rep16	Plasmid			100.0	100.0	744/744	contig_2_polish	32363	31620	CP002115
+2C010	rep5a	Plasmid			100.0	100.0	861/861	contig_2_polish	8739	9599	AP003139
+2C010	rep5a	Plasmid			100.0	100.0	861/861	contig_2_polish	29469	30329	AP003139
+2C010	rep7a	Plasmid			100.0	100.0	750/750	contig_1_polish	1679157	1678408	AM990993
+2C010	blaZ	Resistance	unknown[blaZ_79_KU607584]	Amoxicillin, Ampicillin, Penicillin, Piperacillin	99.21	100.0	888/888	contig_2_polish	1316	2203	KU607584
+2C010	blaZ	Resistance	unknown[blaZ_79_KU607584]	Amoxicillin, Ampicillin, Penicillin, Piperacillin	99.21	100.0	888/888	contig_2_polish	22046	22933	KU607584
+2C010	blaZ	Resistance	ampicillin	Amoxicillin, Ampicillin, Penicillin, Piperacillin	99.21	100.0	888/888	contig_2_polish	1316	2203	KU607584
+2C010	blaZ	Resistance	ampicillin	Amoxicillin, Ampicillin, Penicillin, Piperacillin	99.21	100.0	888/888	contig_2_polish	22046	22933	KU607584
+2C010	mecA	Resistance	unknown[mecA_8_NC_007168]	Amoxicillin, Amoxicillin+Clavulanic acid, Ampicillin, Ampicillin+Clavulanic acid, Cefepime, Cefixime, Cefotaxime, Cefoxitin, Ceftazidime, Ertapenem, Imipenem, Meropenem, Piperacillin, Piperacillin+Tazobactam	100.0	100.0	2007/2007	contig_1_polish	1692094	1694100	NC_007168
+2C010	mecA	Resistance	penicillin	Amoxicillin, Amoxicillin+Clavulanic acid, Ampicillin, Ampicillin+Clavulanic acid, Cefepime, Cefixime, Cefotaxime, Cefoxitin, Ceftazidime, Ertapenem, Imipenem, Meropenem, Piperacillin, Piperacillin+Tazobactam	100.0	100.0	2007/2007	contig_1_polish	1692094	1694100	NC_007168
+2C010	tet(K)	Resistance	unknown[tet(K)_1_U38656]	Doxycycline, Tetracycline	100.0	100.0	1380/1380	contig_1_polish	1682695	1681316	U38656
+2C010	tet(K)	Resistance	tetracycline	Doxycycline, Tetracycline	100.0	100.0	1380/1380	contig_1_polish	1682695	1681316	U38656

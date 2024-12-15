@@ -1,0 +1,30 @@
+Isolate ID	Data	Data Type	Predicted Phenotype	CGE Predicted Phenotype	%Identity	%Overlap	HSP Length/Total Length	Contig	Start	End	Accession
+MR05	ST239 (saureus)	MLST									
+MR05	rep20	Plasmid			100.0	96.97	960/990	contig_3_polish	40534	39575	FN433597
+MR05	rep20	Plasmid			100.0	100.0	990/990	contig_3_polish	20297	19308	FN433597
+MR05	rep21	Plasmid			99.86	100.0	717/717	contig_3_polish	14608	15324	FR821780
+MR05	rep21	Plasmid			99.86	100.0	717/717	contig_3_polish	34875	35591	FR821780
+MR05	rep21	Plasmid			100.0	100.0	996/996	contig_2	1242	2237	EU168704
+MR05	rep21	Plasmid			100.0	100.0	996/996	contig_2	4253	5248	EU168704
+MR05	aac(6')-aph(2'')	Resistance	unknown[aac(6')-aph(2'')_1_M13771]	Gentamicin, Tobramycin, Netilmicin, Kanamycin, Amikacin, Dibekacin, Isepamicin, Fortimicin, Streptomycin	99.93	100.0	1440/1440	contig_1_polish	189322	187883	M13771
+MR05	aac(6')-aph(2'')	Resistance	amikacin, gentamicin, tobramycin	Gentamicin, Tobramycin, Netilmicin, Kanamycin, Amikacin, Dibekacin, Isepamicin, Fortimicin, Streptomycin	99.93	100.0	1440/1440	contig_1_polish	189322	187883	M13771
+MR05	ant(6)-Ia	Resistance	unknown[ant(6)-Ia_1_AF330699]	Streptomycin	99.84	70.63	642/909	contig_1_polish	194632	193991	AF330699
+MR05	ant(6)-Ia	Resistance	streptomycin	Streptomycin	99.84	70.63	642/909	contig_1_polish	194632	193991	AF330699
+MR05	ant(9)-Ia	Resistance	unknown[ant(9)-Ia_1_X02588]	Spectinomycin	100.0	100.0	783/783	contig_1_polish	1016832	1017614	X02588
+MR05	ant(9)-Ia	Resistance	unknown[ant(9)-Ia_1_X02588]	Spectinomycin	100.0	100.0	783/783	contig_1_polish	2781333	2780551	X02588
+MR05	ant(9)-Ia	Resistance	spectinomycin	Spectinomycin	100.0	100.0	783/783	contig_1_polish	1016832	1017614	X02588
+MR05	ant(9)-Ia	Resistance	spectinomycin	Spectinomycin	100.0	100.0	783/783	contig_1_polish	2781333	2780551	X02588
+MR05	aph(3')-III	Resistance	unknown[aph(3')-III_1_M26832]	Kanamycin, Amikacin, Neomycin, Butirosin, Isepamicin, Lividomycin, Paromomycin, Ribostamycin	100.0	100.0	795/795	contig_1_polish	193359	192565	M26832
+MR05	aph(3')-III	Resistance	kanamycin, amikacin	Kanamycin, Amikacin, Neomycin, Butirosin, Isepamicin, Lividomycin, Paromomycin, Ribostamycin	100.0	100.0	795/795	contig_1_polish	193359	192565	M26832
+MR05	blaZ	Resistance	unknown[blaZ_16_JBTH01000015]	Amoxicillin, Ampicillin, Penicillin, Piperacillin	100.0	100.0	849/849	contig_1_polish	804855	805703	JBTH01000015
+MR05	blaZ	Resistance	ampicillin	Amoxicillin, Ampicillin, Penicillin, Piperacillin	100.0	100.0	849/849	contig_1_polish	804855	805703	JBTH01000015
+MR05	dfrG	Resistance	unknown[dfrG_1_AB205645]	Trimethoprim	100.0	100.0	498/498	contig_1_polish	1459398	1458901	AB205645
+MR05	dfrG	Resistance	trimethoprim	Trimethoprim	100.0	100.0	498/498	contig_1_polish	1459398	1458901	AB205645
+MR05	erm(A)	Resistance	unknown[erm(A)_1_X03216]	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	100.0	100.0	732/732	contig_1_polish	1018471	1017740	X03216
+MR05	erm(A)	Resistance	unknown[erm(A)_1_X03216]	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	100.0	100.0	732/732	contig_1_polish	2779694	2780425	X03216
+MR05	erm(A)	Resistance	erythromycin, azithromycin	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	100.0	100.0	732/732	contig_1_polish	1018471	1017740	X03216
+MR05	erm(A)	Resistance	erythromycin, azithromycin	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	100.0	100.0	732/732	contig_1_polish	2779694	2780425	X03216
+MR05	mecA	Resistance	unknown[mecA_2_NC_002951]	Amoxicillin, Amoxicillin+Clavulanic acid, Ampicillin, Ampicillin+Clavulanic acid, Cefepime, Cefixime, Cefotaxime, Cefoxitin, Ceftazidime, Ertapenem, Imipenem, Meropenem, Piperacillin, Piperacillin+Tazobactam	99.85	100.0	2007/2007	contig_1_polish	1040058	1038052	NC_002951
+MR05	mecA	Resistance	penicillin	Amoxicillin, Amoxicillin+Clavulanic acid, Ampicillin, Ampicillin+Clavulanic acid, Cefepime, Cefixime, Cefotaxime, Cefoxitin, Ceftazidime, Ertapenem, Imipenem, Meropenem, Piperacillin, Piperacillin+Tazobactam	99.85	100.0	2007/2007	contig_1_polish	1040058	1038052	NC_002951
+MR05	tet(M)	Resistance	unknown[tet(M)_7_FN433596]	Doxycycline, Tetracycline, Minocycline	100.0	100.0	1920/1920	contig_1_polish	1449158	1447239	FN433596
+MR05	tet(M)	Resistance	tetracycline	Doxycycline, Tetracycline, Minocycline	100.0	100.0	1920/1920	contig_1_polish	1449158	1447239	FN433596

@@ -1,0 +1,17 @@
+nextflow.trace/v2
+realtime=18906
+%cpu=2171
+cpu_model=
+rchar=46888217
+wchar=8764340
+syscr=11728
+syscw=2133
+read_bytes=0
+write_bytes=2318336
+%mem=48
+vmem=1489580
+rss=380528
+peak_vmem=1629096
+peak_rss=435592
+vol_ctxt=347
+inv_ctxt=3497

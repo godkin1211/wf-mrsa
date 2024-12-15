@@ -1,0 +1,27 @@
+Isolate ID	Data	Data Type	Predicted Phenotype	CGE Predicted Phenotype	%Identity	%Overlap	HSP Length/Total Length	Contig	Start	End	Accession
+sau027	ST- (saureus)	MLST									
+sau027	rep10	Plasmid			99.07	88.34	432/489	Seq2_len=33332	31414	30985	NC001390
+sau027	rep16	Plasmid			100.0	100.0	744/744	Seq2_len=33332	12751	12008	CP000737
+sau027	rep19	Plasmid			99.8	100.1	985/984	Seq2_len=33332	13176	14160	CP000704
+sau027	rep20	Plasmid			98.3	67.01	587/876	Seq1_len=2922955	2598155	2598741	AP003089
+sau027	rep21	Plasmid			98.78	68.48	491/717	Seq3_len=3019	3019	2529	GQ900485
+sau027	rep21	Plasmid			99.03	100.7	722/717	Seq1_len=2922955	2603369	2602650	GQ900485
+sau027	rep22	Plasmid			99.86	100.0	708/708	Seq2_len=33332	28026	27319	X03408
+sau027	rep5a	Plasmid			100.0	100.0	861/861	Seq2_len=33332	9857	10717	AP003139
+sau027	rep7a	Plasmid			99.87	100.0	750/750	Seq1_len=2922955	93751	94499	AM990993
+sau027	aac(6')-aph(2'')	Resistance	unknown[aac(6')-aph(2'')_1_M13771]	Gentamicin, Tobramycin, Netilmicin, Kanamycin, Amikacin, Dibekacin, Isepamicin, Fortimicin, Streptomycin	99.72	100.14	1442/1440	Seq2_len=33332	21152	22591	M13771
+sau027	aac(6')-aph(2'')	Resistance	amikacin, gentamicin, tobramycin	Gentamicin, Tobramycin, Netilmicin, Kanamycin, Amikacin, Dibekacin, Isepamicin, Fortimicin, Streptomycin	99.72	100.14	1442/1440	Seq2_len=33332	21152	22591	M13771
+sau027	aadD	Resistance	unknown[aadD_2_M19465]	Amikacin, Tobramycin	100.0	100.0	762/762	Seq2_len=33332	27150	26389	M19465
+sau027	aadD	Resistance	amikacin, tobramycin	Amikacin, Tobramycin	100.0	100.0	762/762	Seq2_len=33332	27150	26389	M19465
+sau027	blaZ	Resistance	unknown[blaZ_78_KU607301]	Amoxicillin, Ampicillin, Penicillin, Piperacillin	98.88	100.56	893/888	Seq1_len=2922955	2627388	2628278	KU607301
+sau027	blaZ	Resistance	ampicillin	Amoxicillin, Ampicillin, Penicillin, Piperacillin	98.88	100.56	893/888	Seq1_len=2922955	2627388	2628278	KU607301
+sau027	dfrG	Resistance	unknown[dfrG_1_AB205645]	Trimethoprim	99.8	100.2	499/498	Seq1_len=2922955	93042	92544	AB205645
+sau027	dfrG	Resistance	trimethoprim	Trimethoprim	99.8	100.2	499/498	Seq1_len=2922955	93042	92544	AB205645
+sau027	erm(C)	Resistance	unknown[erm(C)_13_M13761]	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	99.59	100.27	737/735	Seq2_len=33332	30178	29443	M13761
+sau027	erm(C)	Resistance	erythromycin, azithromycin	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	99.59	100.27	737/735	Seq2_len=33332	30178	29443	M13761
+sau027	fusC	Resistance	unknown[fusC_1_KF527883]	Fusidic acid	99.38	100.47	642/639	Seq1_len=2922955	55485	56125	KF527883
+sau027	fusC	Resistance	unknown[fusC_1_KF527883]	Fusidic acid	99.38	100.47	642/639	Seq1_len=2922955	55485	56125	KF527883
+sau027	mecA	Resistance	unknown[mecA_8_NC_007168]	Amoxicillin, Amoxicillin+Clavulanic acid, Ampicillin, Ampicillin+Clavulanic acid, Cefepime, Cefixime, Cefotaxime, Cefoxitin, Ceftazidime, Ertapenem, Imipenem, Meropenem, Piperacillin, Piperacillin+Tazobactam	99.65	100.3	2013/2007	Seq1_len=2922955	74957	72946	NC_007168
+sau027	mecA	Resistance	penicillin	Amoxicillin, Amoxicillin+Clavulanic acid, Ampicillin, Ampicillin+Clavulanic acid, Cefepime, Cefixime, Cefotaxime, Cefoxitin, Ceftazidime, Ertapenem, Imipenem, Meropenem, Piperacillin, Piperacillin+Tazobactam	99.65	100.3	2013/2007	Seq1_len=2922955	74957	72946	NC_007168
+sau027	tet(K)	Resistance	unknown[tet(K)_1_U38656]	Doxycycline, Tetracycline	99.78	100.07	1381/1380	Seq1_len=2922955	86927	88305	U38656
+sau027	tet(K)	Resistance	tetracycline	Doxycycline, Tetracycline	99.78	100.07	1381/1380	Seq1_len=2922955	86927	88305	U38656

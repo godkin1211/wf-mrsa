@@ -1,0 +1,43 @@
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+/usr/local/lib/python3.9/site-packages/Bio/Application/__init__.py:40: BiopythonDeprecationWarning: The Bio.Application modules and modules relying on it have been deprecated.
+
+Due to the on going maintenance burden of keeping command line application
+wrappers up to date, we have decided to deprecate and eventually remove these
+modules.
+
+We instead now recommend building your command line and invoking it directly
+with the subprocess module.
+  warnings.warn(
+2024-12-15 09:05:51 WARNING: Using non-default ResFinder/PointFinder. This may lead to differences in the detected AMR genes depending on how the database files are structured.
+2024-12-15 09:05:51 WARNING: The only validated Pointfinder organism(s) are {'enterococcus_faecium', 'escherichia_coli', 'salmonella', 'campylobacter', 'helicobacter_pylori', 'enterococcus_faecalis'}. By selecting "staphylococcus_aureus" you are not guaranteed that all point mutations in this PointFinder database will be properly detected.
+2024-12-15 09:05:51 INFO: No --plasmidfinder-database-type specified. Will search the entire PlasmidFinder database
+2024-12-15 09:05:51 INFO: --output-dir not set. Files will be output to the respective --output-[type] setting
+2024-12-15 09:05:51 INFO: Will exclude ResFinder/PointFinder genes listed in [/usr/local/lib/python3.9/site-packages/staramr/databases/exclude/data/genes_to_exclude.tsv]. Use --no-exclude-genes to disable
+2024-12-15 09:05:51 INFO: Will report complex mutations listed in [/usr/local/lib/python3.9/site-packages/staramr/databases/resistance/pointfinder/complex/data/complex_mutations.tsv]
+2024-12-15 09:05:51 INFO: Making BLAST databases for input files
+2024-12-15 09:05:52 INFO: Scheduling blasts and MLST for 2C010.fasta
+2024-12-15 09:06:00 WARNING: No drug found for drug_class=all, gene=blaZ_79, accession=KU607584
+2024-12-15 09:06:01 WARNING: No drug found for drug_class=all, gene=blaZ_79, accession=KU607584
+2024-12-15 09:06:01 WARNING: No drug found for drug_class=all, gene=mecA_8, accession=NC_007168
+2024-12-15 09:06:01 WARNING: No drug found for drug_class=all, gene=tet(K)_1, accession=U38656
+/usr/local/lib/python3.9/site-packages/staramr/results/AMRDetectionSummary.py:134: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  resistance_frame = pd.concat([resistance_frame, simplified_pointfinder], sort=True)
+/usr/local/lib/python3.9/site-packages/staramr/results/AMRDetectionSummary.py:210: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  resistance_frame = pd.concat([resistance_frame, point_frame], sort=True)
+2024-12-15 09:06:05 INFO: Finished. Took 0.22 minutes.
+2024-12-15 09:06:05 INFO: Predicting AMR resistance phenotypes is enabled. The predictions are for microbiological resistance and *not* clinical resistance. These results are continually being improved and we welcome any feedback.
+2024-12-15 09:06:05 INFO: Writing resfinder to [2C010_resfinder.tsv]
+2024-12-15 09:06:05 INFO: Writing pointfinder to [2C010_pointfinder.tsv]
+2024-12-15 09:06:05 INFO: Writing plasmidfinder to [2C010_plasmidfinder.tsv]
+2024-12-15 09:06:05 INFO: Writing summary to [2C010_summary.tsv]
+2024-12-15 09:06:05 INFO: Writing MLST summary to [2C010_mlst.tsv]
+2024-12-15 09:06:05 INFO: Writing detailed summary to [2C010_detailed_summary.tsv]
+2024-12-15 09:06:05 INFO: Writing settings to [2C010_settings.txt]
+2024-12-15 09:06:05 INFO: Writing Excel to [2C010_results.xlsx]
+/usr/local/lib/python3.9/site-packages/staramr/subcommand/Search.py:197: FutureWarning: Starting with pandas version 3.0 all arguments of to_excel except for the argument 'excel_writer' will be keyword-only.
+  sheetname_dataframe[name].to_excel(writer, name, freeze_panes=[1, 2], float_format="%0.2f",na_rep=self.BLANK)
+/usr/local/lib/python3.9/site-packages/staramr/subcommand/Search.py:199: FutureWarning: Starting with pandas version 3.0 all arguments of to_excel except for the argument 'excel_writer' will be keyword-only.
+  sheetname_dataframe[name].to_excel(writer, name, freeze_panes=[1, 1], float_format="%0.2f",na_rep=self.BLANK)
+/usr/local/lib/python3.9/site-packages/staramr/subcommand/Search.py:203: FutureWarning: Starting with pandas version 3.0 all arguments of to_excel except for the argument 'excel_writer' will be keyword-only.
+  settings_dataframe.to_excel(writer, 'Settings')
+2024-12-15 09:06:06 INFO: BLAST hits are stored in [2C010_hits]

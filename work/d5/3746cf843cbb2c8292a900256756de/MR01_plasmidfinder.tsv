@@ -1,0 +1,5 @@
+Isolate ID	Plasmid	%Identity	%Overlap	HSP Length/Total Length	Contig	Start	End	Accession
+MR01	rep16	100.00	100.00	744/744	contig_2_polish	6273	7016	CP000737
+MR01	rep19	100.00	100.00	984/984	contig_2_polish	5847	4864	CP000704
+MR01	rep22	100.00	100.00	708/708	contig_2_polish	23694	24401	X03408
+MR01	rep5a	100.00	100.00	861/861	contig_2_polish	9164	8304	AP003139

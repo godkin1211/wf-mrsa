@@ -1,0 +1,3 @@
+Isolate ID	Plasmid	%Identity	%Overlap	HSP Length/Total Length	Contig	Start	End	Accession
+sau021	rep10	98.98	100.41	491/489	Seq5_len=2475	1564	1076	NC001390
+sau021	rep21	99.10	100.30	999/996	Seq4_len=3013	1394	402	EU168704

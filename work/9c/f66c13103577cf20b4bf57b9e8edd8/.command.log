@@ -1,0 +1,51 @@
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+nxf-E46LLtL0pwuRIibpZ0lK8fEL
+/usr/local/lib/python3.9/site-packages/Bio/Application/__init__.py:40: BiopythonDeprecationWarning: The Bio.Application modules and modules relying on it have been deprecated.
+
+Due to the on going maintenance burden of keeping command line application
+wrappers up to date, we have decided to deprecate and eventually remove these
+modules.
+
+We instead now recommend building your command line and invoking it directly
+with the subprocess module.
+  warnings.warn(
+2024-12-15 09:02:26 WARNING: Using non-default ResFinder/PointFinder. This may lead to differences in the detected AMR genes depending on how the database files are structured.
+2024-12-15 09:02:26 WARNING: The only validated Pointfinder organism(s) are {'enterococcus_faecium', 'campylobacter', 'helicobacter_pylori', 'salmonella', 'enterococcus_faecalis', 'escherichia_coli'}. By selecting "staphylococcus_aureus" you are not guaranteed that all point mutations in this PointFinder database will be properly detected.
+2024-12-15 09:02:26 INFO: No --plasmidfinder-database-type specified. Will search the entire PlasmidFinder database
+2024-12-15 09:02:26 INFO: --output-dir not set. Files will be output to the respective --output-[type] setting
+2024-12-15 09:02:26 INFO: Will exclude ResFinder/PointFinder genes listed in [/usr/local/lib/python3.9/site-packages/staramr/databases/exclude/data/genes_to_exclude.tsv]. Use --no-exclude-genes to disable
+2024-12-15 09:02:26 INFO: Will report complex mutations listed in [/usr/local/lib/python3.9/site-packages/staramr/databases/resistance/pointfinder/complex/data/complex_mutations.tsv]
+2024-12-15 09:02:26 INFO: Making BLAST databases for input files
+2024-12-15 09:02:26 INFO: Scheduling blasts and MLST for sau027.fasta
+2024-12-15 09:02:36 WARNING: No drug found for drug_class=all, gene=aac(6')-aph(2'')_1, accession=M13771
+2024-12-15 09:02:36 WARNING: No drug found for drug_class=all, gene=aadD_2, accession=M19465
+2024-12-15 09:02:36 WARNING: No drug found for drug_class=all, gene=erm(C)_13, accession=M13761
+2024-12-15 09:02:36 WARNING: No drug found for drug_class=all, gene=tet(K)_1, accession=U38656
+2024-12-15 09:02:36 WARNING: No drug found for drug_class=all, gene=dfrG_1, accession=AB205645
+2024-12-15 09:02:36 WARNING: No drug found for drug_class=all, gene=mecA_8, accession=NC_007168
+2024-12-15 09:02:36 WARNING: No drug found for drug_class=all, gene=fusC_1, accession=KF527883
+2024-12-15 09:02:36 WARNING: No drug found for drug_class=all, gene=blaZ_78, accession=KU607301
+2024-12-15 09:02:36 WARNING: No drug found for drug_class=fusidicacid, gene=fusC_1, accession=KF527883
+2024-12-15 09:02:39 ERROR: invalid literal for int() with base 10: 'p4-promoter-size-304'
+Traceback (most recent call last):
+  File "/usr/local/bin/staramr", line 68, in <module>
+    args.run_command(args)
+  File "/usr/local/lib/python3.9/site-packages/staramr/subcommand/Search.py", line 480, in run
+    results = self._generate_results(database_repos=database_repos,
+  File "/usr/local/lib/python3.9/site-packages/staramr/subcommand/Search.py", line 296, in _generate_results
+    amr_detection.run_amr_detection(files,pid_threshold, plength_threshold_resfinder,
+  File "/usr/local/lib/python3.9/site-packages/staramr/detection/AMRDetection.py", line 198, in run_amr_detection
+    self._pointfinder_dataframe = self._create_pointfinder_dataframe(pointfinder_blast_map, pid_threshold,
+  File "/usr/local/lib/python3.9/site-packages/staramr/detection/AMRDetectionResistance.py", line 62, in _create_pointfinder_dataframe
+    return pointfinder_parser.parse_results()
+  File "/usr/local/lib/python3.9/site-packages/staramr/blast/results/BlastResultsParser.py", line 67, in parse_results
+    self._handle_blast_hit(file, database_name, blast_out, results, hit_seq_records)
+  File "/usr/local/lib/python3.9/site-packages/staramr/blast/results/BlastResultsParser.py", line 105, in _handle_blast_hit
+    partitions.append(self._create_hit(in_file, database_name, blast_record))
+  File "/usr/local/lib/python3.9/site-packages/staramr/blast/results/pointfinder/BlastResultsParserPointfinder.py", line 54, in _create_hit
+    return PointfinderHitHSPPromoter(file, blast_record, database_name)
+  File "/usr/local/lib/python3.9/site-packages/staramr/blast/results/pointfinder/nucleotide/PointfinderHitHSPPromoter.py", line 20, in __init__
+    self._parse_database_name(database_name)
+  File "/usr/local/lib/python3.9/site-packages/staramr/blast/results/pointfinder/nucleotide/PointfinderHitHSPPromoter.py", line 118, in _parse_database_name
+    size = int(size_string.replace('bp', ''))  # remove the 'bp' and convert to an int
+ValueError: invalid literal for int() with base 10: 'p4-promoter-size-304'

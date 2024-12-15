@@ -1,0 +1,10 @@
+Isolate ID	Data	Data Type	Predicted Phenotype	CGE Predicted Phenotype	%Identity	%Overlap	HSP Length/Total Length	Contig	Start	End	Accession
+sau021	ST- (saureus)	MLST									
+sau021	rep10	Plasmid			98.98	100.41	491/489	Seq5_len=2475	1564	1076	NC001390
+sau021	rep21	Plasmid			99.1	100.3	999/996	Seq4_len=3013	1394	402	EU168704
+sau021	blaZ	Resistance	unknown[blaZ_79_KU607584]	Amoxicillin, Ampicillin, Penicillin, Piperacillin	98.88	100.34	891/888	Seq2_len=35039	22815	23705	KU607584
+sau021	blaZ	Resistance	ampicillin	Amoxicillin, Ampicillin, Penicillin, Piperacillin	98.88	100.34	891/888	Seq2_len=35039	22815	23705	KU607584
+sau021	erm(C)	Resistance	unknown[erm(C)_2_M19652]	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	99.36	63.81	469/735	Seq5_len=2475	2475	2010	M19652
+sau021	erm(C)	Resistance	erythromycin, azithromycin	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	99.36	63.81	469/735	Seq5_len=2475	2475	2010	M19652
+sau021	mecA	Resistance	unknown[mecA_6_BX571856]	Amoxicillin, Amoxicillin+Clavulanic acid, Ampicillin, Ampicillin+Clavulanic acid, Cefepime, Cefixime, Cefotaxime, Cefoxitin, Ceftazidime, Ertapenem, Imipenem, Meropenem, Piperacillin, Piperacillin+Tazobactam	99.8	100.1	2009/2007	Seq1_len=2819192	41388	39382	BX571856
+sau021	mecA	Resistance	penicillin	Amoxicillin, Amoxicillin+Clavulanic acid, Ampicillin, Ampicillin+Clavulanic acid, Cefepime, Cefixime, Cefotaxime, Cefoxitin, Ceftazidime, Ertapenem, Imipenem, Meropenem, Piperacillin, Piperacillin+Tazobactam	99.8	100.1	2009/2007	Seq1_len=2819192	41388	39382	BX571856
